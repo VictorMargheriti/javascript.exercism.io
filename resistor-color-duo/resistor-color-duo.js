@@ -5,19 +5,19 @@
 
 export const decodedValue = (arr) => {
   const COLORS = [
-    'Black',
-    'Brown',
-    'Red',
-    'Orange',
-    'Yellow',
-    'Green',
-    'Blue',
-    'Violet',
-    'Grey',
-    'White',
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'violet',
+    'grey',
+    'white',
   ];
-  let colorA = COLORS.indexOf(arr[0].charAt(0).toUpperCase() + arr[0].slice(1))
-  let colorB = COLORS.indexOf(arr[1].charAt(0).toUpperCase() + arr[1].slice(1))
+  let colorA = COLORS.indexOf(arr[0])
+  let colorB = COLORS.indexOf(arr[1])
 
   return colorA * 10 + colorB
 };
